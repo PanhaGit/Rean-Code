@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.imgaeLogo img {
+  transition: ease 0.2s;
+}
+.imgaeLogo:hover img {
+  transform: rotate(15deg);
+}
+
+.animationImg {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+}
+.animationImg img {
+  width: 60%;
+  height: 100%;
+  margin-left: 100px;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-direction: initial;
+  animation-iteration-count: inherit;
+}
+@keyframes animation {
+  from {
+    position: relative;
+    top: -30px;
+  }
+  to {
+    position: relative;
+    top: 30px;
+  }
+}
+.card-images {
+  width: 100%;
+  margin-top: 10px;
+
+  transition: ease 0.3s;
+  height: 300px;
+}
+.card-images img {
+  transition: linear 3s;
+  width: 60%;
+  height: 100%;
+  margin-left: 60px;
+}
+.card-images:hover {
+  cursor: pointer;
+  position: relative;
+  top: -12px;
+  transition: ease 0.5s;
+}
+
+.imageProgramHover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.imageProgramHover img {
+  width: 50%;
+  margin-left: 70px;
+  padding: 4px 0;
+  height: 100%;
+  transition: ease 0.4s;
+}
+.imageProgramHover:hover img {
+  transform: scale(1.2);
+}
